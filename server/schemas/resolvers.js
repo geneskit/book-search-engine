@@ -1,6 +1,6 @@
 // Define the query and mutation functionality to work with the Mongoose models.
 const { User } = require('../models');
-const { AuthenticationError } = require('../apollo-server-express');
+const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -18,7 +18,7 @@ const resolvers = {
         addUser: async (parent, args) => {
             const user = await User.create(args);
             const t = signToken(user);
-            return { token, user };
+            return { t, user };
         },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });

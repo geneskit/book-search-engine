@@ -6,6 +6,15 @@ const { ApolloServer } = require("apollo-server-express");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const srvr = new ApolloServer({
+  typeDefs,
+  resolvers, 
+  context: authMiddleware
+})
+
+srvr.applyMiddleware({ app });
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

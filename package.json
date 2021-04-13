@@ -1,7 +1,7 @@
 {
   "name": "book-search-engine",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a book search application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/geneskit/book-search-engine/issues"
   },
-  "homepage": "https://github.com/geneskit/book-search-engine#readme"
+  "homepage": "https://github.com/geneskit/book-search-engine#readme",
+  "dependencies": {
+    "apollo-server": "^2.22.2",
+    "apollo-server-express": "^2.22.2",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {}
 }

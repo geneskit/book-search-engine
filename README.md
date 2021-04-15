@@ -52,5 +52,3 @@ Once the application has been started, the user will be able to choose from a li
 <br><br>
 ![Employee Tracker Screenshot](assets/media/employee-tracker.PNG) 
 <br><br>
-
-[Here is a link to the walkthrough video.](https://youtu.be/ClONL6lla4s)

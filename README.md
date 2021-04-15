@@ -4,6 +4,8 @@
 
 This is a book search application.
 
+[Deployed Application Link](https://git.heroku.com/morning-sierra-32631.git)
+
 ## Acceptance Criteria
 
 GIVEN a book search engine
@@ -36,19 +38,3 @@ GIVEN a book search engine
 - WHEN I click on the Logout button
 - THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
-## Installation Instructions:
-
-Please install the folllowing packages to successfully run this application.
-```
-npm install node
-npm install inquirer
-npm install console.table --save
-npm install mysql2
-```
-
-## Usage:
-
-Once the application has been started, the user will be able to choose from a list of commands what they would like to do next. Here is a screenshot of the main menu:
-<br><br>
-![Employee Tracker Screenshot](assets/media/employee-tracker.PNG) 
-<br><br>
